@@ -53,5 +53,12 @@
         "Temp/":true
     },
     "dotnet.preferCSharpExtension": true,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "editor.defaultColorDecorators": true,
+    "editor.columnSelection": false,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "cSpell.words": [
+        "Behaviour",
+        "Targeter"
+    ]
 }

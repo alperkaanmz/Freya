@@ -151,7 +151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870888075571327883}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1467,6 +1467,7 @@ MonoBehaviour:
   <InputReader>k__BackingField: {fileID: 1017944753983603025}
   <Controller>k__BackingField: {fileID: 2220013343155146441}
   <Animator>k__BackingField: {fileID: 478771345264247791}
+  <Targeter>k__BackingField: {fileID: 9199056608241171967}
   <FreeLookMovementSpeed>k__BackingField: 5
   <RotationDamping>k__BackingField: 8
 --- !u!114 &1017944753983603025
@@ -1512,7 +1513,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.82
+  m_Height: 1.62
   m_Radius: 0.2
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -1678,7 +1679,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5427666942006101009}
   m_LocalRotation: {x: -1.4254296e-14, y: 0.000000005284008, z: -0.0000010325292, w: 1}
-  m_LocalPosition: {x: 0.000000114120326, y: 1.0525181, z: 0.01768382}
+  m_LocalPosition: {x: 0, y: 1.094, z: 0.01768382}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2308,7 +2309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0720128c99f066a4da5b16427c1b01f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targets: []
 --- !u!135 &1729063968658704133
 SphereCollider:
   m_ObjectHideFlags: 0
