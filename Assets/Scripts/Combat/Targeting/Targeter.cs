@@ -30,33 +30,33 @@ public class Targeter : MonoBehaviour
         RemoveTarget(target);
     }
 
-    public bool  SelectTarget()
+    public bool SelectTarget()
     {
         if(targets.Count == 0) { return false; }
         
-        Target ClosestTarget = null; 
+        Target closestTarget = null;
+        float closestTargetDistance = Mathf.Infinity;
 
-        float ClosestTargetDistance = Mathf.Infinity;
-
-        foreach(Target target in targets)
+        foreach (Target target in targets)
         {
-            Vector2 viewPos = mainCamera.worldToViewportPoint(target.transform.position);
-            if(viewPos.x < 0 || viewPos.x > 1 || viewPos.y < 0|| viewPos.y > 1)
+            Vector2 viewPos = mainCamera.WorldToViewportPoint(target.transform.position);
+
+            if (viewPos.x < 0 || viewPos.x > 1 || viewPos.y < 0 || viewPos.y > 1)
             {
                 continue;
             }
 
             Vector2 toCenter = viewPos - new Vector2(0.5f, 0.5f);
-            if(toCenter.SqrMagnitude < ClosestTargetDistance)
+            if (toCenter.sqrMagnitude < closestTargetDistance)
             {
-                ClosestTarget = target;
-                ClosestTargetDistance = toCenter.sqrMagnitude;
+                closestTarget = target;
+                closestTargetDistance = toCenter.sqrMagnitude;
             }
         }
 
-        if(ClosestTarget == null ) {return false ;}
+        if (closestTarget == null) { return false; }
 
-        CurrentTarget = ClosestTarget;
+        CurrentTarget = closestTarget;
         cineTargetGroup.AddMember(CurrentTarget.transform, 1f,2f);
         
         return true;
