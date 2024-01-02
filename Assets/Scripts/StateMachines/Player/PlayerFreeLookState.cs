@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class PlayerFreeLookState : PlayerBaseState
 {
+    private bool shouldFade;
     private readonly int FreeLookBlendTreeHash = Animator.StringToHash("FreeLookBlendTree");
     private readonly int FreeLookSpeedHash = Animator.StringToHash("FreeLookSpeed");
 
     private const float AnimatorDampTime = 0.1f;
+    private const float CrossFadeDuration = 0.1f;
 
-    public PlayerFreeLookState(PlayerStateMachine stateMachine) : base(stateMachine) {}
+    public PlayerFreeLookState(PlayerStateMachine stateMachine) : base(stateMachine) 
+    {
+        //this.shouldFade = shouldFade;
+    }
 
     public override void Enter()
     {
@@ -42,12 +47,17 @@ public class PlayerFreeLookState : PlayerBaseState
     public override void Exit()
     {
         stateMachine.InputReader.TargetEvent -= OnTarget;
+        stateMachine.InputReader.JumpEvent -= OnJump;
     }
     private void OnTarget()
     {
         if(!stateMachine.Targeter.SelectTarget()) { return; }
 
         stateMachine.SwitchState(new PlayerTargetingState(stateMachine));
+    }
+    private void OnJump()
+    {
+        stateMachine.SwitchState(new PlayerFreeLookState(stateMachine));
     }
 
     private Vector3 CalculateMovement()
@@ -63,12 +73,6 @@ public class PlayerFreeLookState : PlayerBaseState
 
         return forward * stateMachine.InputReader.MovementValue.y + right * stateMachine.InputReader.MovementValue.x;
     }
-
-    private void OnJump()
-    {
-        stateMachine.SwitchState(new PlayerFreeLookState(stateMachine));
-    }
-
     
     private void FaceMovementDirection(Vector3 movement, float deltaTime)
     {

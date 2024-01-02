@@ -59,6 +59,7 @@
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "cSpell.words": [
         "Behaviour",
+        "Knockback",
         "Targeter"
     ]
 }

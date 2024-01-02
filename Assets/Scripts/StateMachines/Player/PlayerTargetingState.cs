@@ -29,7 +29,7 @@ public class PlayerTargetingState : PlayerBaseState
             stateMachine.SwitchState(new PlayerFreeLookState(stateMachine));
             return;
         }
-        Vector3 movement = CalculateMovment();
+        Vector3 movement = CalculateMovement();
         Move(movement * stateMachine.TargetingMovementSpeed, deltaTime);
         
         UpdateAnimator(deltaTime);
@@ -47,7 +47,7 @@ public class PlayerTargetingState : PlayerBaseState
         stateMachine.SwitchState(new PlayerFreeLookState(stateMachine));
 
     }
-     private Vector3 CalculateMovment()
+     private Vector3 CalculateMovement()
      {
         Vector3 movement = new Vector3();
         movement += stateMachine.transform.right * stateMachine.InputReader.MovementValue.x;

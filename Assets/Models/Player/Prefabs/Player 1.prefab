@@ -1468,14 +1468,29 @@ MonoBehaviour:
   <Controller>k__BackingField: {fileID: 2220013343155146441}
   <Animator>k__BackingField: {fileID: 478771345264247791}
   <Targeter>k__BackingField: {fileID: 9199056608241171967}
-  <ForceReciver>k__BackingField: {fileID: 0}
+  <ForceReceiver>k__BackingField: {fileID: 0}
   <FreeLookMovementSpeed>k__BackingField: 5
   <TargetingMovementSpeed>k__BackingField: 0
   <RotationDamping>k__BackingField: 8
   <Attacks>k__BackingField:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - <AnimationName>k__BackingField: Atack1
+    <TransitionDuration>k__BackingField: 0.1
+    <ComboStateIndex>k__BackingField: 1
+    <ComboAttackTime>k__BackingField: 0.6
+    <ForceTime>k__BackingField: 0.35
+    <Force>k__BackingField: 15
+  - <AnimationName>k__BackingField: Atack2
+    <TransitionDuration>k__BackingField: 0
+    <ComboStateIndex>k__BackingField: 2
+    <ComboAttackTime>k__BackingField: 0.5
+    <ForceTime>k__BackingField: 0.35
+    <Force>k__BackingField: 15
+  - <AnimationName>k__BackingField: Atack3
+    <TransitionDuration>k__BackingField: 0.2
+    <ComboStateIndex>k__BackingField: -1
+    <ComboAttackTime>k__BackingField: 0
+    <ForceTime>k__BackingField: 0.35
+    <Force>k__BackingField: 15
 --- !u!114 &1017944753983603025
 MonoBehaviour:
   m_ObjectHideFlags: 0
