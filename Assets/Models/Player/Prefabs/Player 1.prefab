@@ -1425,6 +1425,7 @@ GameObject:
   - component: {fileID: 1017944753983603025}
   - component: {fileID: 478771345264247791}
   - component: {fileID: 2220013343155146441}
+  - component: {fileID: 751723569147130088}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -1468,7 +1469,7 @@ MonoBehaviour:
   <Controller>k__BackingField: {fileID: 2220013343155146441}
   <Animator>k__BackingField: {fileID: 478771345264247791}
   <Targeter>k__BackingField: {fileID: 9199056608241171967}
-  <ForceReceiver>k__BackingField: {fileID: 0}
+  <ForceReceiver>k__BackingField: {fileID: 751723569147130088}
   <FreeLookMovementSpeed>k__BackingField: 5
   <TargetingMovementSpeed>k__BackingField: 0
   <RotationDamping>k__BackingField: 8
@@ -1479,18 +1480,24 @@ MonoBehaviour:
     <ComboAttackTime>k__BackingField: 0.6
     <ForceTime>k__BackingField: 0.35
     <Force>k__BackingField: 15
+    <Damage>k__BackingField: 0
+    <Knockback>k__BackingField: 0
   - <AnimationName>k__BackingField: Atack2
     <TransitionDuration>k__BackingField: 0
     <ComboStateIndex>k__BackingField: 2
     <ComboAttackTime>k__BackingField: 0.5
-    <ForceTime>k__BackingField: 0.35
-    <Force>k__BackingField: 15
+    <ForceTime>k__BackingField: 0.2
+    <Force>k__BackingField: 1
+    <Damage>k__BackingField: 0
+    <Knockback>k__BackingField: 0
   - <AnimationName>k__BackingField: Atack3
     <TransitionDuration>k__BackingField: 0.2
     <ComboStateIndex>k__BackingField: -1
     <ComboAttackTime>k__BackingField: 0
-    <ForceTime>k__BackingField: 0.35
-    <Force>k__BackingField: 15
+    <ForceTime>k__BackingField: 0.2
+    <Force>k__BackingField: 1
+    <Damage>k__BackingField: 0
+    <Knockback>k__BackingField: 0
 --- !u!114 &1017944753983603025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1541,6 +1548,21 @@ CharacterController:
   m_SkinWidth: 0.025
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.84, z: 0}
+--- !u!114 &751723569147130088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4983248058169151179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 698066b84781ffc4797951f8b6c3eaad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 2220013343155146441}
+  agent: {fileID: 0}
+  drag: 0.3
 --- !u!1 &5029048665146865482
 GameObject:
   m_ObjectHideFlags: 0

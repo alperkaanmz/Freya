@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 2.5765476, z: -6.130313}
+  m_FollowOffset: {x: 0, y: 2, z: -7}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -346,7 +346,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: 78.95433
+    Value: 0
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -454,7 +454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5345709375902775326}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.0167465, y: 1.1103992, z: 1.9814205}
+  m_LocalPosition: {x: 0, y: 0.5338516, z: -3.8440638}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -638,7 +638,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5345709375981779003}
-  m_LocalRotation: {x: 0.14547864, y: 0.62333006, z: -0.1194809, w: 0.75895983}
+  m_LocalRotation: {x: 0.12859774, y: 1.7468581e-15, z: -2.3482636e-16, w: 0.99169683}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -716,7 +716,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5345709376368863443}
-  m_LocalRotation: {x: 0.15925968, y: 0.62105364, z: -0.13079922, w: 0.75618804}
+  m_LocalRotation: {x: 0.14661492, y: 0.0000000136524525, z: -0.0000000020235198, w: 0.9891937}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -829,7 +829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 2.5765476, z: -6.130313}
+  m_FollowOffset: {x: 0, y: 2, z: -7}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -849,7 +849,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: 78.95433
+    Value: 0
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -921,7 +921,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5345709376540098755}
-  m_LocalRotation: {x: 0.13168606, y: 0.625395, z: -0.10815314, w: 0.7614741}
+  m_LocalRotation: {x: 0.11058574, y: 0.0000000029124883, z: -3.2406736e-10, w: 0.9938666}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1034,7 +1034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 2.5765476, z: -6.130313}
+  m_FollowOffset: {x: 0, y: 2, z: -7}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -1054,7 +1054,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: 78.95433
+    Value: 0
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -1388,6 +1388,14 @@ PrefabInstance:
     - target: {fileID: 3026386865951850440, guid: 304ac22357fac5b4095ad4cd01f9287c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 3.5658116
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544186916268826176, guid: 304ac22357fac5b4095ad4cd01f9287c, type: 3}
+      propertyPath: <Attacks>k__BackingField.Array.data[0].<Force>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544186916268826176, guid: 304ac22357fac5b4095ad4cd01f9287c, type: 3}
+      propertyPath: <Attacks>k__BackingField.Array.data[0].<ForceTime>k__BackingField
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3544186916268826176, guid: 304ac22357fac5b4095ad4cd01f9287c, type: 3}
       propertyPath: <Attacks>k__BackingField.Array.data[0].<AnimationName>k__BackingField
@@ -1853,7 +1861,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 39.984802
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 478573670531064058, guid: 304ac22357fac5b4095ad4cd01f9287c, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 304ac22357fac5b4095ad4cd01f9287c, type: 3}
 --- !u!4 &1680144358617221953 stripped

@@ -15,7 +15,6 @@ public class PlayerFreeLookState : PlayerBaseState
     {
         //this.shouldFade = shouldFade;
     }
-
     public override void Enter()
     {
         stateMachine.InputReader.TargetEvent += OnTarget;
