@@ -437,6 +437,52 @@ Transform:
   m_Father: {fileID: 1245089398212419281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1501836593898719168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3958262922237808952}
+  - component: {fileID: 9155077185558503005}
+  m_Layer: 0
+  m_Name: WeaponLogic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3958262922237808952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501836593898719168}
+  m_LocalRotation: {x: -0.02770676, y: -0.482974, z: 0.05012495, w: 0.8737597}
+  m_LocalPosition: {x: 0.9929962, y: 1.526001, z: 0.39999962}
+  m_LocalScale: {x: 1.358443, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6324489869966939580}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -57.864, z: 6.567}
+--- !u!136 &9155077185558503005
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501836593898719168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 1.25
+  m_Direction: 0
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1533906127845888668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,6 +1472,7 @@ GameObject:
   - component: {fileID: 478771345264247791}
   - component: {fileID: 2220013343155146441}
   - component: {fileID: 751723569147130088}
+  - component: {fileID: 7367974323552218307}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -1447,6 +1494,7 @@ Transform:
   m_Children:
   - {fileID: 2457412547732477546}
   - {fileID: 6288856475624260748}
+  - {fileID: 3958262922237808952}
   - {fileID: 5924694460394926394}
   - {fileID: 6737055458519422569}
   - {fileID: 6686546978975009363}
@@ -1556,6 +1604,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 2220013343155146441}
   drag: 0.1
+--- !u!114 &7367974323552218307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4983248058169151179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451f67bad97f5e043a53ada8518ab09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponLogic: {fileID: 1501836593898719168}
 --- !u!1 &5029048665146865482
 GameObject:
   m_ObjectHideFlags: 0
