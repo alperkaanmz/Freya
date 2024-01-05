@@ -8,23 +8,22 @@ public class WeaponDamage : MonoBehaviour
 
     private int damage;
 
-    private List<Collider> alreadyColliedWith = new List<Collider>();
+    private List<Collider> alreadyCollidedWith = new List<Collider>();
 
     private void OnEnable()
     {
-        alreadyColliedWith.Clear();
+        alreadyCollidedWith.Clear();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other == myCollider) {return;}
+        if (other == myCollider) { return; }
 
-        if (alreadyColliedWith.Contains(other)) {return;}
-        {
-            alreadyColliedWith.Add(other);
-        }
+        if (alreadyCollidedWith.Contains(other)) { return; }
 
-        if(other.TryGetComponent<Health>(out Health health))
+        alreadyCollidedWith.Add(other);
+
+        if (other.TryGetComponent<Health>(out Health health))
         {
             health.DealDamage(damage);
         }
@@ -35,3 +34,4 @@ public class WeaponDamage : MonoBehaviour
         this.damage = damage;
     }
 }
+

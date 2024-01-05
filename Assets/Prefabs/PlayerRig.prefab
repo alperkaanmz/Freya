@@ -58,8 +58,8 @@ MonoBehaviour:
   m_LayerIndex: 0
   m_ShowDebugText: 0
   m_ChildCameras:
-  - {fileID: 5345709375902775327}
-  - {fileID: 2751295179306682843}
+  - {fileID: 0}
+  - {fileID: 0}
   m_Instructions:
   - m_FullHash: 585382737
     m_VirtualCamera: {fileID: 5345709375902775327}
@@ -1574,14 +1574,6 @@ PrefabInstance:
       value: 64.60875
       objectReference: {fileID: 0}
     - target: {fileID: 6324489869966939580, guid: 304ac22357fac5b4095ad4cd01f9287c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 23.518852
-      objectReference: {fileID: 0}
-    - target: {fileID: 6324489869966939580, guid: 304ac22357fac5b4095ad4cd01f9287c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 8.354937
-      objectReference: {fileID: 0}
-    - target: {fileID: 6324489869966939580, guid: 304ac22357fac5b4095ad4cd01f9287c, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
@@ -1853,6 +1845,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 39.984802
       objectReference: {fileID: 0}
+    - target: {fileID: 9199056608241171967, guid: 304ac22357fac5b4095ad4cd01f9287c, type: 3}
+      propertyPath: cineTargetGroup
+      value: 
+      objectReference: {fileID: 4119767918719674463}
     m_RemovedComponents:
     - {fileID: 478573670531064058, guid: 304ac22357fac5b4095ad4cd01f9287c, type: 3}
     m_AddedGameObjects: []

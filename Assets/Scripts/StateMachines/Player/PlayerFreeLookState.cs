@@ -8,14 +8,14 @@ public class PlayerFreeLookState : PlayerBaseState
     private readonly int FreeLookSpeedHash = Animator.StringToHash("FreeLookSpeed");
 
     private const float AnimatorDampTime = 0.1f;
-    private const float CrossFadeDuration = 0.4f;
+    private const float CrossFadeDuration = 0.1f;
 
     public PlayerFreeLookState(PlayerStateMachine stateMachine) : base(stateMachine) { }
 
     public override void Enter()
     {
         stateMachine.InputReader.TargetEvent += OnTarget;
-        stateMachine.Animator.CrossFadeInFixedTime(FreeLookBlendTreeHash, 0.4f);
+        stateMachine.Animator.CrossFadeInFixedTime(FreeLookBlendTreeHash, CrossFadeDuration);
     }
 
     public override void Tick(float deltaTime)
