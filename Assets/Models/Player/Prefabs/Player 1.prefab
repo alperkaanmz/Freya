@@ -447,6 +447,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3958262922237808952}
   - component: {fileID: 9155077185558503005}
+  - component: {fileID: 147365162410388153}
+  - component: {fileID: 6340423565164183062}
   m_Layer: 0
   m_Name: WeaponLogic
   m_TagString: Untagged
@@ -462,7 +464,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501836593898719168}
   m_LocalRotation: {x: -0.02770676, y: -0.482974, z: 0.05012495, w: 0.8737597}
-  m_LocalPosition: {x: 0.9929962, y: 1.526001, z: 0.39999962}
+  m_LocalPosition: {x: 0.99, y: 1.576, z: 0.396}
   m_LocalScale: {x: 1.358443, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -479,10 +481,39 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.2
-  m_Height: 1.25
+  m_Radius: 0.14105384
+  m_Height: 1.2717432
   m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.010871668, y: -0.04071717, z: 0.018228797}
+--- !u!114 &147365162410388153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501836593898719168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8f650102d348349a1a61e9acb6f6b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCollider: {fileID: 2220013343155146441}
+--- !u!54 &6340423565164183062
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501836593898719168}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1533906127845888668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,14 +1205,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4559644402172579880}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.44124466, z: -0, w: 0.8973869}
+  m_LocalPosition: {x: 0.08937836, y: 0, z: 0.8965616}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6324489869966939580}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 52.367, z: 0}
 --- !u!137 &1719282708573193536
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -1518,6 +1549,7 @@ MonoBehaviour:
   <Animator>k__BackingField: {fileID: 478771345264247791}
   <Targeter>k__BackingField: {fileID: 9199056608241171967}
   <ForceReceiver>k__BackingField: {fileID: 751723569147130088}
+  <Weapon>k__BackingField: {fileID: 147365162410388153}
   <FreeLookMovementSpeed>k__BackingField: 5
   <TargetingMovementSpeed>k__BackingField: 0
   <RotationDamping>k__BackingField: 8
@@ -1528,18 +1560,24 @@ MonoBehaviour:
     <ComboAttackTime>k__BackingField: 0.6
     <ForceTime>k__BackingField: 0.35
     <Force>k__BackingField: 15
+    <Damage>k__BackingField: 10
+    <Knockback>k__BackingField: 0
   - <AnimationName>k__BackingField: Atack2
     <TransitionDuration>k__BackingField: 0
     <ComboStateIndex>k__BackingField: 2
     <ComboAttackTime>k__BackingField: 0.5
     <ForceTime>k__BackingField: 0.35
     <Force>k__BackingField: 15
+    <Damage>k__BackingField: 15
+    <Knockback>k__BackingField: 0
   - <AnimationName>k__BackingField: Atack3
     <TransitionDuration>k__BackingField: 0.2
     <ComboStateIndex>k__BackingField: -1
     <ComboAttackTime>k__BackingField: 0
     <ForceTime>k__BackingField: 0.35
     <Force>k__BackingField: 20
+    <Damage>k__BackingField: 20
+    <Knockback>k__BackingField: 0
 --- !u!114 &1017944753983603025
 MonoBehaviour:
   m_ObjectHideFlags: 0
