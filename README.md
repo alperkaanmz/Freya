@@ -33,4 +33,4 @@ Victory: Complete all stages to achieve victory and master the art of hack 'n sl
 Next Steps
 Explore the code, experiment with combat strategies, and enhance the game with additional features. May your blade be swift and your victories legendary!
 
-RUN 'hayanasini.exe' and start your journey !
+RUN 'ProjectFreya.exe' and start your journey !
