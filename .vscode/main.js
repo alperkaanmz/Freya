@@ -1,5 +1,5 @@
-/// <reference path="c:/Users/arasy/.vscode/extensions/nur.script-0.2.1/@types/api.global.d.ts" />
-/// <reference path="c:/Users/arasy/.vscode/extensions/nur.script-0.2.1/@types/vscode.global.d.ts" />
+/// <reference path="c:/Users/Alper/.vscode/extensions/nur.script-0.2.1/@types/api.global.d.ts" />
+/// <reference path="c:/Users/Alper/.vscode/extensions/nur.script-0.2.1/@types/vscode.global.d.ts" />
 //  @ts-check
 //  API: https://code.visualstudio.com/api/references/vscode-api
 
