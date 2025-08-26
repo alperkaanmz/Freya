@@ -17,7 +17,7 @@ Skill-based Gameplay: Hone your combat skills to emerge victorious in each encou
 
 Getting Started
 
-Clone the Repository: git clone https://github.com/your-username/freya-game.git
+Clone the Repository: git clone https://github.com/alperkaanmz/freya-game.git
 Open in Your Development Environment: Use your preferred game development environment.
 
 Gameplay
